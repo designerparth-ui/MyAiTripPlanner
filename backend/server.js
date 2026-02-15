@@ -17,7 +17,7 @@ app.use(
 );
 
 const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434";
-const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "phi3";
+const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "phi3:latest";
 const SYSTEM_PROMPT = "You are Disha AI, a travel planning assistant.";
 
 app.post("/api/disha", async (req, res) => {
